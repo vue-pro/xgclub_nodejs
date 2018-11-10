@@ -5,7 +5,7 @@ const bodyParser = require('koa-bodyparser');
 const cors = require('koa-cors');
 
 const app = new Koa(); 
-// app.use(staticServer(__dirname + '/dist'));
+app.use(staticServer(__dirname + '/dist'));
 
 const index = require('./server/routers/index.js');
 
